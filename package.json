@@ -1,0 +1,26 @@
+{
+  "name": "svelte-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "npm run start:dev & npm run autobuild",
+    "start": "sirv public --single",
+    "start:dev": "sirv public --single --dev --host 0.0.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^1.27.13",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^5.1.1",
+    "svelte": "^3.16.4"
+  },
+  "dependencies": {
+    "sirv-cli": "^0.4.5"
+  }
+}
